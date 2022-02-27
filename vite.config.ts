@@ -4,7 +4,6 @@ import preprocess from 'svelte-preprocess';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: './',
 	postcss: true,
 	resolve: {
 		alias: {
