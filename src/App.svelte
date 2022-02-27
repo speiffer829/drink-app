@@ -31,14 +31,12 @@
 				{ ingredient: drinks.strIngredient13, amount: drinks.strMeasure13 },
 				{ ingredient: drinks.strIngredient14, amount: drinks.strMeasure14 },
 				{ ingredient: drinks.strIngredient15, amount: drinks.strMeasure15 },
-			].filter((ing) => ing.ingredient !== null);
+			].filter((ing) => ing.ingredient !== null && ing.ingredient !== '');
 			console.log(drinks);
 
 			return drinks;
 		} catch (err) {}
 	}
-
-	$: ingredients = [drink.strIngredient1];
 </script>
 
 <main>
@@ -72,7 +70,10 @@
 			<ul>
 				{#each drink.ingredients as ingredient}
 					<li>
-						<strong>{ingredient.ingredient}</strong> - {ingredient.amount}
+						<strong>{ingredient.ingredient}</strong>
+						{#if ingredient.amount}
+							- {ingredient.amount}
+						{/if}
 					</li>
 				{/each}
 			</ul>
