@@ -51,7 +51,7 @@ main{
 	text-align: center;
 	border: none;
 	font-family: var(--title-font);
-	font-size: 2vw;
+	font-size: 1.6rem;
 	border-radius: 1rem;
 	box-shadow: 0px 10px 20px 0px hsl(var(--greenHSL) / 60%);
 	cursor: pointer;
