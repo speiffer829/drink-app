@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+		font-family: 'Mirage';
+		font-weight: 800;
+		src: url('/fonts/MirageBlack.otf') format('otf');
+		src: url('/fonts/MirageBlack.woff') format('woff');
+		src: url('/fonts/MirageBlack.woff2') format('woff2');
+	}
+
+	:root{
+		--font: 'Poppins', sans-serif;
+		--title-font: 'Mirage', serif;
+
+		--light: #fff;
+		--dark: #000;
+		--yellow: #fff72d;
+		--green: #16fe86;
+		--greenHSL: 148.9 99.1% 54.1%;
+	}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, .title-font{
+	font-family: var(--title-font);
+}
+
+.highlighter{
+	position: relative;
+	isolation: isolate;
+	background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, var(--green) 50%, var(--green));
+}
+
+main{
+	width: min(95%, 480px);
+	margin: 0 auto;
+	padding: 3rem 0;
+}
+
+.big-btn{
+	background: var(--green);
+	color: var(--dark);
+	width: 100%;
+	padding: 1.5rem;
+	text-align: center;
+	border: none;
+	font-family: var(--title-font);
+	font-size: 2vw;
+	border-radius: 1rem;
+	box-shadow: 0px 10px 20px 0px hsl(var(--greenHSL) / 60%);
+	cursor: pointer;
+	margin-top: 2rem;
+}
+
+img{
+	display: block;
+	width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 1rem;
+}
+
+.loading{
+	position: fixed;
+	inset: 50% 0;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+.drink-name{
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 10px;
+}
