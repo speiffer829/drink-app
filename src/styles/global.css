@@ -34,6 +34,7 @@ h1, h2, h3, h4, .title-font{
 .highlighter{
 	position: relative;
 	isolation: isolate;
+	border-radius: .1em;
 	background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, var(--green) 50%, var(--green));
 }
 
